@@ -32,6 +32,6 @@ By default The Chesshub Docker image will try to connect to Mongodb at Host (mon
 ```
 # Volumes and data persistence 
 
-By default the compose file is configured to map volumes of both MongoDB, and Elasticsearch to /data/db and /usr/share/elasticsearch/data respictively.
+By default the compose file is configured to map volumes of both MongoDB, and Elasticsearch to /data/db and /usr/share/elasticsearch/data respectively.
 
 To change this behavior you can edit the compose file to mount the volumes to other place.

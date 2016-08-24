@@ -3,7 +3,7 @@ mongo:
   ports:
     - 127.0.0.1:27017:27017
   volumes:
-    - /data/db:/data/db
+    - /usr/local/var/mongodb
   restart: always
 
 elasticsearch:
@@ -12,7 +12,7 @@ elasticsearch:
     - 127.0.0.1:9200:9200
     - 127.0.0.1:9300:9300
   volumes:
-    - /usr/share/elasticsearch/data:/usr/share/elasticsearch/data
+    - /usr/local/var/elasticsearch/elasticsearch_DomTancredi/
   restart: always
 
 chesshub:
