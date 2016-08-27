@@ -1,5 +1,5 @@
 {
-    "chesshub": {
+    "forestation": {
         "db": "mongodb://mongo/test",
 	"es":{
 		 "host": "elasticsearch",

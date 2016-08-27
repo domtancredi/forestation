@@ -15,7 +15,7 @@ router.get('/', function(req, res) {
            var welcomeMessage = req.flash('welcomeMessage');
            var registerSuccessMessage = req.flash('registerSuccessMessage');
            res.render('partials/index', {
-               title: 'Chess Hub',
+               title: 'Forestation Hub',
                quote: randomQuote,
                puzzle: randomPuzzle,
                logoutSuccessMessage: logoutSuccessMessage,
@@ -32,7 +32,7 @@ router.get('/game/:token/:side', function(req, res) {
     var token = req.params.token;
     var side = req.params.side;
     res.render('partials/game', {
-        title: 'Chess Hub - Game ' + token,
+        title: 'Forestation Hub - Game ' + token,
         user: req.user,
         isPlayPage: true,
         token: token,
@@ -48,7 +48,7 @@ router.get('/logout', function(req, res) {
 
 router.get('/tv', function(req, res) {
     res.render('partials/tv', {
-        title: 'Chess Hub - Tv',
+        title: 'Forestation Hub - Tv',
         user: req.user,
         isTvPage: true,
         opponent1: 'V. Anand',
@@ -68,7 +68,7 @@ router.get('/monitor', function(req, res) {
     var apiStatus = "success", apiIcon = "smile";
     var esStatus = "success", esIcon = "smile";
     res.render('partials/monitor', {
-        title: 'Chess Hub - Monitor',
+        title: 'Forestation Hub - Monitor',
         user: req.user,
         status: {
             mongo: mongoStatus,

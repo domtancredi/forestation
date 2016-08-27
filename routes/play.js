@@ -4,7 +4,7 @@ var router = express.Router();
 
 router.get('/', function(req, res) {
     res.render('partials/play', {
-        title: 'Chess Hub - Game',
+        title: 'Forestation Hub - Game',
         user: req.user,
         isPlayPage: true
     });

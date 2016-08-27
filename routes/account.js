@@ -7,7 +7,7 @@ var moment = require('moment');
 /* GET user account details. */
 router.get('/', function(req, res) {
     res.render('partials/account', {
-        title: 'Chess Hub - Account',
+        title: 'Forestation Hub - Account',
         user: req.user,
         isAccountPage: true,
         lastConnection: moment(req.user.lastConnection).fromNow(),

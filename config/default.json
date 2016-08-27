@@ -1,9 +1,9 @@
 {
-    "chesshub": {
+    "forestation": {
         "db": "mongodb://localhost/test",
-	"es":{
-		 "host": "localhost",
-		 "port": "9200"
-    }
+		"es":{
+			 "host": "localhost",
+			 "port": "9200"
+	    }
     }
 }

@@ -15,8 +15,8 @@ elasticsearch:
     - /usr/local/var/elasticsearch/elasticsearch_DomTancredi/
   restart: always
 
-chesshub:
-  build: ./chesshub
+forestation:
+  build: ./forestation
   ports:
     - 3000:3000
   links:

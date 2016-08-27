@@ -6,7 +6,7 @@
 The compose file consists of 3 containers:
 - MongoDB Container.
 - Elasticsearch Container.
-- Chesshub Container.
+- Forestation Container.
 
 ```
 $ git clone https://github.com/benas/gamehub.io.git
@@ -15,13 +15,13 @@ $ sudo docker-compose up
 ```
 
 # Edit Services Addresses
+termin
+By default The Forestation Docker image will try to connect to Mongodb at Host (mongo) and port (27017) and to Elasticsearch at host (elasticsearch) and port (9200), to change that edit the following file:
 
-By default The Chesshub Docker image will try to connect to Mongodb at Host (mongo) and port (27017) and to Elasticsearch at host (elasticsearch) and port (9200), to change that edit the following file:
-
-### docker/chesshub/config/default.json:
+### docker/forestation/config/default.json:
 ```
 {
-    "chesshub": {
+    "forestation": {
         "db": "mongodb://mongo/test",
 	"es":{
 		 "host": "elasticsearch",

@@ -13,7 +13,7 @@ router.get('/', function(req, res) {
     }
 
     res.render('partials/login', {
-        title: 'Chess Hub - Login',
+        title: 'Forestation Hub - Login',
         error: error,
         isLoginPage: true
     });

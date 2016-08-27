@@ -6,7 +6,7 @@ var router = express.Router();
 
 router.get('/', function(req, res) {
     res.render('partials/search', {
-        title: 'Chess Hub - Search',
+        title: 'Forestation Hub - Search',
         user: req.user,
         isSearchPage: true
     });
